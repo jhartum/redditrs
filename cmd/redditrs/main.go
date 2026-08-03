@@ -15,6 +15,7 @@ var (
 	formatFlag string
 	fullFlag   bool
 	fieldsFlag string
+	version    = "dev"
 )
 
 func main() {
@@ -41,6 +42,7 @@ func newRootCommand() *cobra.Command {
 	root := &cobra.Command{
 		Use:           "redditrs",
 		Short:         "Reddit research for agents",
+		Version:       version,
 		SilenceErrors: true,
 		SilenceUsage:  true,
 		Args:          cobra.NoArgs,
