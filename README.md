@@ -1,5 +1,9 @@
 # redditrs
 
+[![CI](https://github.com/jhartum/redditrs/actions/workflows/ci.yml/badge.svg)](https://github.com/jhartum/redditrs/actions/workflows/ci.yml)
+[![Go](https://img.shields.io/badge/Go-1.23+-blue?logo=go)](https://go.dev/dl/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An agent-optimized CLI for Reddit research using a web-session cookie, no API keys.
 
 ## Installation
@@ -8,6 +12,12 @@ Requires Go 1.23+:
 
 ```sh
 go install ./cmd/redditrs
+```
+
+From a published release:
+
+```sh
+go install github.com/jhartum/redditrs@latest
 ```
 
 From a checkout (release build — strips debug info and source paths):
@@ -91,3 +101,9 @@ make build  # optimized release binary (stripped, trimmed paths)
 ```
 
 The full specification lives in [`docs/spec.md`](docs/spec.md).
+
+## License
+
+MIT License — see [LICENSE](LICENSE).
+
+Copyright (c) 2026 Alexandr Brezgunov
