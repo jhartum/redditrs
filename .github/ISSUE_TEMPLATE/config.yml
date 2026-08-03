@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Questions / Help"
+    url: https://github.com/jhartum/redditrs/discussions
+    about: "Ask questions and discuss in GitHub Discussions"
+  - name: "Documentation"
+    url: https://github.com/jhartum/redditrs/blob/main/docs/spec.md
+    about: "Read the full specification"

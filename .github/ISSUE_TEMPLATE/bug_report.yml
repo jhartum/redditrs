@@ -1,0 +1,69 @@
+name: Bug Report
+description: Report a bug in redditrs
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide the exact commands you ran (including flags and environment variables, e.g. REDDITRS_DELAY_MS, REDDITRS_BASE_URL) and any setup required.
+      placeholder: |
+        1. export REDDITRS_COOKIE='reddit_session=...'
+        2. redditrs search "example query" --limit 5
+        3. See error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: Which version of redditrs are you using?
+      options:
+        - "Latest (main branch)"
+        - "From a release"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: Which operating system are you on?
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output
+      description: Paste any relevant output or error messages (redact your cookie and any tokens before posting).
+      render: shell
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Prerequisites
+      description: Before submitting, please confirm the following.
+      options:
+        - label: "I have searched existing issues and this bug has not been reported yet."
+          required: true
