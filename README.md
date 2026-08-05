@@ -4,7 +4,19 @@
 [![Go](https://img.shields.io/badge/Go-1.25.12+-blue?logo=go)](https://go.dev/dl/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An agent-optimized CLI for Reddit research using a web-session cookie, no API keys.
+`redditrs` is a fast Go CLI for Reddit search and research: search results, threads,
+subreddit listings and trends read directly from Reddit using only the cookie of a
+logged-in web session — **no API keys, no OAuth, no rate-limit quota**. Its output is
+optimized for AI agents and for humans in the terminal.
+
+## Features
+
+- **Reddit search from the terminal** — `redditrs search "claude code vs opencode"`, with limits, JSON output and caching
+- **Thread & subreddit research** — read a thread with top comments, discover and rank subreddits for a topic
+- **Trends without the Reddit API** — hot/rising/new listings per subreddit
+- **Cookie-based auth** — any logged-in web session works; the cookie is re-read before every request
+- **Polite & cached** — built-in rate limiting and a persistent bbolt cache shared across CLI processes
+- **Agent-ready** — self-documenting help hints in every output, ready-made skill for pi / Claude Code
 
 ## Installation
 
